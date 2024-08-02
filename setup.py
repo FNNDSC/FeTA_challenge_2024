@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='FeTA_challenge_2024',
+    version=get_version('inference.py'),
+    description='code for feta',
     author='FNNDSC',
-    author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    author_email='andrea.gondova@childrens.harvard.edu',
+    url='https://github.com/FNNDSC/FeTA_challenge_2024',
+    py_modules=['inference'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'inference = inference:main'
         ]
     },
     classifiers=[
